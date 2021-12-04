@@ -22,10 +22,10 @@
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/urlbtn"
-            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintHorizontal_bias="0.927"
             app:layout_constraintStart_toStartOf="@+id/urlbtn"
             app:layout_constraintTop_toBottomOf="@+id/urlbtn"
-            app:layout_constraintVertical_bias="0.275" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/editName"
@@ -80,7 +80,7 @@
             android:layout_width="160dp"
             android:layout_height="37dp"
             android:text=" Fatima Iftikhar"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView5"
@@ -94,7 +94,7 @@
             android:layout_width="143dp"
             android:layout_height="38dp"
             android:text="Bsef18a544"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -132,14 +132,11 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="413dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
