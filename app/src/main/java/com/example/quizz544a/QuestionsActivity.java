@@ -1,8 +1,8 @@
 package com.example.quizz544a;
 
-import android.view.View;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -13,34 +13,38 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class QuestionsActivity extends AppCompatActivity {
     TextView tv;
-    Button submitbutton, quitbutton;
-    RadioGroup radio_g;
-    RadioButton rb1,rb2;
+    Button submitB, quitB;
+    RadioGroup radioG;
+    RadioButton b1, b2;
 
     String questions[] = {
-            "قافلہِ عشق و وفا کا سالار ہے اقبال?",
-            "Which of these is not a bitwise operator?",
-            "Which keyword is used by method to refer to the object that invoked it?",
-            "Which of these keywords is used to define interfaces in Java?",
-            "Which of these access specifiers can be used for an interface?",
-            "Which of the following is correct way of importing an entire package ‘pkg’?",
-            "What is the return type of Constructors?",
-            "Which of the following package stores all the standard java classes?",
-            "Which of these method of class String is used to compare two String objects for their equality?",
-            "An expression involving byte, int, & literal numbers is promoted to which of these?"
+            "How many emission points of the letters are there?",
+            "Which of the following is a list of halqiyah letters?",
+            "Which letter is used to produce sound by touching base of Tongue(near Uvula),the mouth roof?",
+            "Which letter is used to produce sound by touching portion of Tongue (near its base),the roof of mouth?",
+            "Which letters are used to produce sound by touching tongue,the center of mouth roof?",
+            "Which of the following is Shajariyah-Haafiyah?",
+            "Which tarfiyah letter makes you touch your rounded tip of tongue,the base of frontal 8 teeth?",
+            "Which of the following is a list of tarfiyah letters?",
+            "Which letters are used to produce sound by touching tip of tongue,the base of front 2 teeth?",
+            "Which of the following is a list of Lisaveyah letters?",
+            "Which letters are used to produce sound from Mouth empty spaceَ?",
+            "Which of the following is a list of Ghunna letters?"
     };
-    String answers[] = {"main method","<=","this","interface","public","import pkg.*","None of the mentioned","java","equals()","int"};
+    String answers[] = {"17","أ ہ ع ح غ خ","ق","ک","ج ش ی","ض","ل","ن ر ل","ت د ط","ص ز س ظ ذ ث","ظ ذ ث","م ن ف ب م و"};
     String opt[] = {
-            "finalize method","main method","static method","private method",
-            "&","&=","|=","<=",
-            "import","this","catch","abstract",
-            "Interface","interface","intf","Intf",
-            "public","protected","private","All of the mentioned",
-            "Import pkg.","import pkg.*","Import pkg.*","import pkg.",
-            "int","float","void","None of the mentioned",
-            "lang","java","util","java.packages",
-            "equals()","Equals()","isequal()","Isequal()",
-            "int","long","byte","float"
+            "29","17",
+            "أ ہ ع ح غ خ","ن ر ل",
+            "ق","م",
+            "م","ک",
+            "م ن ف ب م و","ج ش ی",
+            "م","ض",
+            "ل","م",
+            "م ن ف ب م و","ن ر ل",
+            "م ن ف ب م و","ت د ط",
+            "م ن ف ب م و","ص ز س ظ ذ ث",
+            "ظ ذ ث","م ن ف ب م و",
+            "م ن ف ب م و","ظ ذ ث"
     };
     int flag=0;
     public static int marks=0,correct=0,wrong=0;
@@ -59,25 +63,25 @@ public class QuestionsActivity extends AppCompatActivity {
         else
             textView.setText("Hello " + name);
 
-        submitbutton=(Button)findViewById(R.id.button3);
-        quitbutton=(Button)findViewById(R.id.buttonquit);
+        submitB =(Button)findViewById(R.id.button3);
+        quitB =(Button)findViewById(R.id.buttonquit);
         tv=(TextView) findViewById(R.id.tvque);
 
-        radio_g=(RadioGroup)findViewById(R.id.answersgrp);
-        rb1=(RadioButton)findViewById(R.id.radioButton);
-        rb2=(RadioButton)findViewById(R.id.radioButton2);
+        radioG =(RadioGroup)findViewById(R.id.answersgrp);
+        b1 =(RadioButton)findViewById(R.id.radioButton);
+        b2 =(RadioButton)findViewById(R.id.radioButton2);
         tv.setText(questions[flag]);
-        rb1.setText(opt[0]);
-        rb2.setText(opt[1]);
-        submitbutton.setOnClickListener(new View.OnClickListener() {
+        b1.setText(opt[0]);
+        b2.setText(opt[1]);
+        submitB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(radio_g.getCheckedRadioButtonId()==-1)
+                if(radioG.getCheckedRadioButtonId()==-1)
                 {
-                    Toast.makeText(getApplicationContext(), "Please select one choice", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Please enter one choice", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                RadioButton uans = (RadioButton) findViewById(radio_g.getCheckedRadioButtonId());
+                RadioButton uans = (RadioButton) findViewById(radioG.getCheckedRadioButtonId());
                 String ansText = uans.getText().toString();
                 if(ansText.equals(answers[flag])) {
                     correct++;
@@ -96,8 +100,8 @@ public class QuestionsActivity extends AppCompatActivity {
                 if(flag<questions.length)
                 {
                     tv.setText(questions[flag]);
-                    rb1.setText(opt[flag*4]);
-                    rb2.setText(opt[flag*4 +1]);
+                    b1.setText(opt[flag*2]);
+                    b2.setText(opt[flag*2 +1]);
                 }
                 else
                 {
@@ -105,11 +109,11 @@ public class QuestionsActivity extends AppCompatActivity {
                     Intent in = new Intent(getApplicationContext(),ResultActivity.class);
                     startActivity(in);
                 }
-                radio_g.clearCheck();
+                radioG.clearCheck();
             }
         });
 
-        quitbutton.setOnClickListener(new View.OnClickListener() {
+        quitB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),ResultActivity.class);

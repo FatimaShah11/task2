@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button startbutton=(Button)findViewById(R.id.button);
         Button url=(Button)findViewById(R.id.urlbtn);
+        Button Pbutton=(Button)findViewById(R.id.pl);
         final EditText nametext=(EditText)findViewById(R.id.editName);
 
         startbutton.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(getApplicationContext(),QuestionsActivity.class);
                 intent.putExtra("myname",name);
                 startActivity(intent);
+            }
+        });
+        Pbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2=new Intent(getApplicationContext(),PracticeActivity.class);
+                startActivity(intent2);
             }
         });
         url.setOnClickListener(new View.OnClickListener() {

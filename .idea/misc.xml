@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/fati/AndroidStudioProjects/QUIZZ544A2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/fati/AndroidStudioProjects/QUIZZ544A2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/fati/AndroidStudioProjects/QUIZZ544A2/app/src/main/res/layout/activity_qestions.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/fati/AndroidStudioProjects/QUIZZ544A2/app/src/main/res/layout/activity_result.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/fati/AndroidStudioProjects/QUIZZ544A2/app/src/main/res/layout/practice_activity.xml" value="0.292259083728278" />
       </map>
     </option>
   </component>
