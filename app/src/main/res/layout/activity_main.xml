@@ -22,10 +22,10 @@
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/urlbtn"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.97"
             app:layout_constraintStart_toStartOf="@+id/urlbtn"
             app:layout_constraintTop_toBottomOf="@+id/urlbtn"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.275" />
 
         <EditText
             android:id="@+id/editName"
@@ -38,10 +38,10 @@
             android:textColor="#df040b"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.862"
+            app:layout_constraintHorizontal_bias="0.834"
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toTopOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.411" />
+            app:layout_constraintVertical_bias="0.897" />
 
         <Button
 
@@ -56,23 +56,23 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/editName"
-            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintHorizontal_bias="0.312"
             app:layout_constraintStart_toStartOf="@+id/editName"
             app:layout_constraintTop_toBottomOf="@+id/editName"
-            app:layout_constraintVertical_bias="0.208"
+            app:layout_constraintVertical_bias="0.801"
             tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/urlbtn"
             android:layout_width="248dp"
             android:layout_height="59dp"
-            android:layout_marginBottom="428dp"
+            android:layout_marginBottom="316dp"
             android:text="Repository URL"
             android:textColor="#ffffff"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintHorizontal_bias="0.547"
             app:layout_constraintStart_toStartOf="@+id/imageView" />
 
         <TextView
@@ -87,7 +87,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.002" />
+            app:layout_constraintVertical_bias="0.129" />
 
         <TextView
             android:id="@+id/textView5"
@@ -98,10 +98,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.987"
+            app:layout_constraintHorizontal_bias="0.988"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.128" />
 
         <Button
             android:id="@+id/pl"
@@ -112,10 +112,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/button"
-            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintHorizontal_bias="0.476"
             app:layout_constraintStart_toStartOf="@+id/button"
             app:layout_constraintTop_toBottomOf="@+id/button"
-            app:layout_constraintVertical_bias="0.052" />
+            app:layout_constraintVertical_bias="0.704" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -127,8 +127,20 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/repo" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="413dp"
+            android:layout_height="70dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
