@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class PracticeActivity extends AppCompatActivity {
 
@@ -11,10 +12,10 @@ public class PracticeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.practice_activity);
-        //Toolbar toolbar = findViewById(R.id.toolbar3);
-        //setSupportActionBar(toolbar);
-        //getSupportActionBar().setTitle("Quiz");
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Toolbar toolbar = findViewById(R.id.toolbar3);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Quiz");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ImageView I1=(ImageView)findViewById(R.id.imageView2);
         ImageView I2=(ImageView)findViewById(R.id.imageView3);
