@@ -1,15 +1,9 @@
 package com.example.quizz544a;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class PracticeActivity extends AppCompatActivity {
 
@@ -17,6 +11,11 @@ public class PracticeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.practice_activity);
+        //Toolbar toolbar = findViewById(R.id.toolbar3);
+        //setSupportActionBar(toolbar);
+        //getSupportActionBar().setTitle("Quiz");
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ImageView I1=(ImageView)findViewById(R.id.imageView2);
         ImageView I2=(ImageView)findViewById(R.id.imageView3);
         ImageView I3=(ImageView)findViewById(R.id.imageView4);
