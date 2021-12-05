@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class ResultActivity extends AppCompatActivity {
     TextView tv, tv2, tv3;
@@ -18,6 +19,10 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        Toolbar toolbar = findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Quiz");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tv = (TextView)findViewById(R.id.tvres);
         tv2 = (TextView)findViewById(R.id.tvres2);
