@@ -19,9 +19,9 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        Toolbar toolbar = findViewById(R.id.toolbar2);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Quiz");
+        Toolbar tool = findViewById(R.id.toolbar2);
+        setSupportActionBar(tool);
+        getSupportActionBar().setTitle("Result");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tv = (TextView)findViewById(R.id.tvres);
@@ -63,6 +63,8 @@ public class ResultActivity extends AppCompatActivity {
                 startActivity(Intent.createChooser(in3,"share using"));
             }
         });
+
+
     }
 
 }

@@ -14,20 +14,20 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ResultActivity"/>
         <activity android:name=".QuestionsActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="com.example.vikasojha.quizbee.QuestionsActivity" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ResultActivity"></activity>
-        <activity android:name=".PracticeActivity"></activity>
+                <activity android:name=".PracticeActivity">
+        </activity>
     </application>
 
 </manifest>

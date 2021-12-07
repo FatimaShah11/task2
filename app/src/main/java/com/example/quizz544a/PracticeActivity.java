@@ -14,7 +14,7 @@ public class PracticeActivity extends AppCompatActivity {
         setContentView(R.layout.practice_activity);
         Toolbar toolbar = findViewById(R.id.toolbar3);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Quiz");
+        getSupportActionBar().setTitle("Practice");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ImageView I1=(ImageView)findViewById(R.id.imageView2);

@@ -53,8 +53,8 @@ public class QuestionsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qestions);
-        Toolbar toolbar = findViewById(R.id.toolbar1);
-        setSupportActionBar(toolbar);
+        Toolbar bar = findViewById(R.id.toolbar1);
+        setSupportActionBar(bar);
         getSupportActionBar().setTitle("Quiz");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
