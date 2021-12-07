@@ -1,6 +1,5 @@
 package com.example.quizz544a;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
