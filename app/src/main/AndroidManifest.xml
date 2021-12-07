@@ -26,7 +26,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-                <activity android:name=".PracticeActivity">
+                <activity android:name=".PracticeActivity"
+                    android:parentActivityName=".MainActivity">
         </activity>
     </application>
 
