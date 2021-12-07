@@ -17,7 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ResultActivity"/>
         <activity android:name=".QuestionsActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity">
@@ -26,6 +25,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".ResultActivity"
+            android:parentActivityName=".QuestionsActivity"/>
                 <activity android:name=".PracticeActivity"
                     android:parentActivityName=".MainActivity">
         </activity>
