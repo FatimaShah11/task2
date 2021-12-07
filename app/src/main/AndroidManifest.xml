@@ -26,7 +26,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ResultActivity"
-            android:parentActivityName=".QuestionsActivity"/>
+            android:parentActivityName=".QuestionsActivity">
+            <meta-data
+                android:name="android.support.QuestionsActivity"
+                android:value="com.example.quizz544a.QuestionsActivity" />
+        </activity>>
                 <activity android:name=".PracticeActivity"
                     android:parentActivityName=".MainActivity">
         </activity>
